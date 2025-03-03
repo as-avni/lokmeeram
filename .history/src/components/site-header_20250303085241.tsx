@@ -11,8 +11,7 @@ return (
 <header className="bg-orange-200 bg-opacity-80 backdrop-blur-md shadow-lg sticky md:fixed top-0 md:top-3 left-0 md:left-10 w-[98%] md:w-[95%] mx-auto rounded-lg z-50 ">
       <div className="mx-auto px-4 py-4 flex items-center justify-between">
         
-        {/* लोगो और शीर्षक */}
-        <Link href="/">
+        {/* लोगो और शीर्षक */}<Link href="/">
         <div className="flex items-center gap-2">
           <Image src="/images/lok-me-ram-logo.png" alt="लोगो" width={40} height={40} className="h-10 w-auto" />
           <span className="text-lg font-bold text-black">लोक में राम</span>

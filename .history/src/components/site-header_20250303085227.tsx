@@ -12,17 +12,17 @@ return (
       <div className="mx-auto px-4 py-4 flex items-center justify-between">
         
         {/* लोगो और शीर्षक */}
-        <Link href="/">
+         <Link href="/"
         <div className="flex items-center gap-2">
           <Image src="/images/lok-me-ram-logo.png" alt="लोगो" width={40} height={40} className="h-10 w-auto" />
           <span className="text-lg font-bold text-black">लोक में राम</span>
         </div>
-        </Link>
 
         {/* डेस्कटॉप नेविगेशन */}
         <nav className="hidden md:flex gap-6 text-sm">
           <Link href="/" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             होम
+          </Link>
           </Link>
           <Link href="/#about" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             हमारे बारे में

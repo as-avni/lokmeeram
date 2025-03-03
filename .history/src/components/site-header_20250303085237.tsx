@@ -12,7 +12,7 @@ return (
       <div className="mx-auto px-4 py-4 flex items-center justify-between">
         
         {/* लोगो और शीर्षक */}
-        <Link href="/">
+         <Link href="/">
         <div className="flex items-center gap-2">
           <Image src="/images/lok-me-ram-logo.png" alt="लोगो" width={40} height={40} className="h-10 w-auto" />
           <span className="text-lg font-bold text-black">लोक में राम</span>
