@@ -94,34 +94,34 @@ export default function RegForm() {
     {error && <p className="text-red-600 text-center text-black">{error}</p>}
 
     {step === 1 && (
-      <form onSubmit={(e) => e.preventDefault()} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black border-orange-300 hover:border-orange-500">
+      <form onSubmit={(e) => e.preventDefault()} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black border-orange-200 hover:border-orange-300">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label className="block text-xl font-medium mb-2 text-black">नाम</label>
-            <Input name="name" value={formData.name} onChange={handleChange} placeholder="अपना नाम दर्ज करें" className="text-black border-orange-300 hover:border-orange-500" />
+            <Input name="name" value={formData.name} onChange={handleChange} placeholder="अपना नाम दर्ज करें" className="text-black border-orange-200 hover:border-orange-300" />
           </div>
           <div>
             <label className="block text-xl font-medium mb-2 text-black">जन्म तिथि</label>
-            <Input type="date" name="dob" value={formData.dob} onChange={handleChange} className="text-black border-orange-300 hover:border-orange-500" />
+            <Input type="date" name="dob" value={formData.dob} onChange={handleChange} className="text-black border-orange-200 hover:border-orange-300" />
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-xl font-medium mb-2 text-black">फ़ोन</label>
-            <Input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="अपना फ़ोन नंबर दर्ज करें" className="text-black border-orange-300 hover:border-orange-500" />
+            <Input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="अपना फ़ोन नंबर दर्ज करें" className="text-black border-orange-200 hover:border-orange-300" />
           </div>
           <div>
             <label className="block text-xl font-medium mb-2 text-black">ईमेल</label>
-            <Input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="अपना ईमेल दर्ज करें" className="text-black border-orange-300 hover:border-orange-500" />
+            <Input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="अपना ईमेल दर्ज करें" className="text-black border-orange-200 hover:border-orange-300" />
           </div>
         </div>
         <div>
           <label className="block text-xl font-medium mb-2 text-black">पता</label>
-          <Input name="address" value={formData.address} onChange={handleChange} placeholder="अपना पता दर्ज करें" className="text-black border-orange-300 hover:border-orange-500" />
+          <Input name="address" value={formData.address} onChange={handleChange} placeholder="अपना पता दर्ज करें" className="text-black border-orange-200 hover:border-orange-300" />
         </div>
         <div>
           <label className="block text-xl font-medium mb-2 text-black">संदेश</label>
-          <Textarea name="message" value={formData.message} onChange={handleChange} placeholder="अपना संदेश यहाँ लिखें" className="text-black border-orange-300 hover:border-orange-500" />
+          <Textarea name="message" value={formData.message} onChange={handleChange} placeholder="अपना संदेश यहाँ लिखें" className="text-black border-orange-200 hover:border-orange-300" />
         </div>
         <Button type="button" className="w-full text-xl rounded-full bg-green-300 hover:bg-orange-600 text-black mt-40 mb-4" onClick={handleNext}>
           अगला
@@ -132,18 +132,18 @@ export default function RegForm() {
     {step === 2 && (
       <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black">
         <div className="text-center">
-          <p className="text-2xl font-bold mb-2 text-black">भुगतान करने के लिए स्कैन करें</p>
+          <p className="text-xl font-medium font-semibold mb-2 text-black">भुगतान करने के लिए स्कैन करें</p>
           <Image src="/payment-qr.png" alt="भुगतान QR कोड" width={300} height={300} className="mx-auto" />
         </div>
         <div>
-          <label className="block text-xl font-semi-bold mb-3 text-black">भुगतान स्क्रीनशॉट अपलोड करें</label>
+          <label className="block text-lg font-medium mb-3 text-black">भुगतान स्क्रीनशॉट अपलोड करें</label>
           <Input type="file" accept="image/*" onChange={handleFileChange} className="text-black border-orange-200 hover:border-orange-400" />
           {fileName && <p className="text-sm mt-1 text-black">चयनित: {fileName}</p>}
         </div>
-        <Button type="submit" className="w-full bg-green-500 hover:bg-green-500 text-black text-base" disabled={loading || !screenshot}>
+        <Button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-black" disabled={loading || !screenshot}>
           {loading ? "सबमिट हो रहा है..." : "सबमिट करें"}
         </Button>
-        <Button type="button" className="w-full bg-green-300 hover:bg-green-500 mt-2 text-black text-base" onClick={() => setStep(1)}>
+        <Button type="button" className="w-full bg-green-500 hover:bg-green-300 mt-2 text-black" onClick={() => setStep(1)}>
           वापस जाएँ
         </Button>
       </form>

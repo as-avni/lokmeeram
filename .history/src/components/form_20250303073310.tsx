@@ -94,7 +94,7 @@ export default function RegForm() {
     {error && <p className="text-red-600 text-center text-black">{error}</p>}
 
     {step === 1 && (
-      <form onSubmit={(e) => e.preventDefault()} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black border-orange-300 hover:border-orange-500">
+      <form onSubmit={(e) => e.preventDefault()} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black border-orange-200 hover:border-orange-300">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label className="block text-xl font-medium mb-2 text-black">नाम</label>
