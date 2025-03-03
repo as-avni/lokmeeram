@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "लोक में राम",
-  description: "आधिकारिक वेबसाइट,",
+  description: "",
 };
 
 export default function RootLayout({
