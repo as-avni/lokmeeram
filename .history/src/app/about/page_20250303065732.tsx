@@ -4,7 +4,7 @@ export default function About() {
         
         <section id="about" className="w-full py-12 px-4 items-center gap-4
         bg-[url('/images/about-team/about-us-bg.png')] bg-cover h-[1000] md:h-[600]">
-            <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
+            <h1 className="text-3xl text- text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
                 हमारे </span> बारे में
                 </h1>

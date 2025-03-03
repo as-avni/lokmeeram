@@ -4,20 +4,21 @@ export default function About() {
         
         <section id="about" className="w-full py-12 px-4 items-center gap-4
         bg-[url('/images/about-team/about-us-bg.png')] bg-cover h-[1000] md:h-[600]">
-            <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
+            <h1 className="text-3xl text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
                 हमारे </span> बारे में
                 </h1>
             <div className="flex flex-col md:flex-row">
                 <div className="flex-1 w-full md:w-1/2">
-                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-3xl">
+                    <p className="text-gray-600 text-lg md:text-2xl max-w-lg md:max-w-xl">
                     <span className="font-bold">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का नाम है ।</span>
                     </p>
                     <p className="font-bold text-black text-lg md:text-2xl max-w-lg md:max-w-xl porse text-justify">लोक में राम - लोक क्या है?</p>
-                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-3xl porse ">लोक वह है जिसमें वनस्पति से बृहस्पति तक सभी कुछ समाया हुआ है।
+                    {/* <p className="font-bold text-black text-lg md:text-2xl max-w-lg md:max-w-xl mx-auto ">लोक क्या है?</p> */}
+                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-xl porse text-justify ">लोक वह है जिसमें वनस्पति से बृहस्पति तक सभी कुछ समाया हुआ है।
                     लोक वह है जो सामंजस पूर्ण स्थिति में सबको अपने अंदर समाहित करता है। लोक के तीन आयाम है प्रकृति, विकृति और संस्कृति संस्कृति के माध्यम से विकृति को दूर करते हुए प्रकृति के साथ जीना ही वाला ही लोक है।
                     </p>
-                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-3xl porse">संस्कृति, प्रकृति और विकृति
+                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-xl">संस्कृति, प्रकृति और विकृति
                         हर मनुष्य के जीवन में यह तीन चीज होती है वर्तमान समय में संस्कृति विकृति रूप में चल रही 
                         है इसलिए हमारी प्रकृति खराब हो रही है। 
                         क्योंकि मनुष्य से दोनों चीज जुड़ी हैं संस्कृति और विकृति इसलिए मनुष्य की जिम्मेदारी बनती है 

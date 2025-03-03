@@ -4,13 +4,13 @@ export default function About() {
         
         <section id="about" className="w-full py-12 px-4 items-center gap-4
         bg-[url('/images/about-team/about-us-bg.png')] bg-cover h-[1000] md:h-[600]">
-            <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
+            <h1 className="text-3xl text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
                 हमारे </span> बारे में
                 </h1>
             <div className="flex flex-col md:flex-row">
                 <div className="flex-1 w-full md:w-1/2">
-                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-3xl">
+                    <p className="text-black text-lg md:text-2xl max-w-lg md:max-w-xl">
                     <span className="font-bold">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का नाम है ।</span>
                     </p>
                     <p className="font-bold text-black text-lg md:text-2xl max-w-lg md:max-w-xl porse text-justify">लोक में राम - लोक क्या है?</p>

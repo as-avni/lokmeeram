@@ -1,11 +1,54 @@
+
+// "use client";
+// import { useState, useEffect } from "react";
+// import Image from "next/image";
+
+// export default function Hero() {
+//   coˇ
+//     ˇbg1.png",
+//     ˇbg2.png",
+//     ˇˇ
+//   ];ˇ
+//   const [curreˇ] = useState(0);
+
+//   useEffect(()ˇ
+//     const inteˇ {
+//       setCurreˇprevIndex + 1) % images.length);
+//     }, 5000); // Auto change every 5 seconds
+
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <section 
+//       id="home" 
+//       className="px-4 flex flex-col md:flex-row items-center gap-4 h-[250px] md:min-h-screen relative overflow-hidden"
+//     >
+//       {/* Background Image Slider */}
+//       <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
+//         <Image 
+//           src={images[currentIndex]} 
+//           alt="Hero Background" 
+//           layout="fill" 
+//           objectFit="cover" 
+//           className="w-full h-full" 
+//         />
+//       </div>
+      
+//       {/* Content */}
+//     </section>
+//   );
+// }
+
 "use client"
 
 import { useState, useEffect } from "react"
-// import { X } from "lucide-react"
+// import Link from "next/link"
+import { X } from "lucide-react"
 
 export default function Hero() {
   const [currentBgIndex, setCurrentBgIndex] = useState(0)
-  // const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const backgroundImages = [
     "/images/background/hero-bg1.png",
@@ -38,11 +81,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container md:mt-0 mt-8 relative z-10 flex flex-col items-start justify-center h-full text-white">
-        <div className=" max-w-2xl">
+        <div className="max-w-2xl">
+          <p className="mb-4 text-xl font-kalam">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का नाम है</p>
           <h1 className="mb-4 text-white text-2xl font-bold font-amita leading-tight md:text-7xl">
           लोक में राम
           </h1>
-          <p className="mb-4 text-xl font-kalam font-semibold">राम लोक के हैं, लोक राम का है। मर्यादा पुरुषोत्तम राम का जीवन हमें प्रेम, त्याग और धर्म की राह दिखाता है।</p>
           {/* <div className="flex flex-wrap gap-4">
             <Link href="#products" className="bg-green-300 text-black btn rounded-full hover:bg-white">
               What We Serve
@@ -59,7 +102,7 @@ export default function Hero() {
       </div>
 
       {/* Video Modal */}
-      {/* {isModalOpen && (
+      {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <div className="relative bg-white rounded-lg p-6 w-full max-w-2xl">
             <button
@@ -77,7 +120,8 @@ export default function Hero() {
           </div>
         </div>
       )}
-      
+
+      {/* Indicators */}
       <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center">
         <div className="flex space-x-2">
           {backgroundImages.map((_, index) => (
@@ -88,7 +132,7 @@ export default function Hero() {
             />
           ))}
         </div>
-      </div> */}
+      </div>
     </section>
   )
 }

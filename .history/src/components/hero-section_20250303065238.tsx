@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-// import { X } from "lucide-react"
+import { X } from "lucide-react"
 
 export default function Hero() {
   const [currentBgIndex, setCurrentBgIndex] = useState(0)
-  // const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const backgroundImages = [
     "/images/background/hero-bg1.png",
@@ -59,7 +59,7 @@ export default function Hero() {
       </div>
 
       {/* Video Modal */}
-      {/* {isModalOpen && (
+      {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <div className="relative bg-white rounded-lg p-6 w-full max-w-2xl">
             <button
@@ -88,7 +88,7 @@ export default function Hero() {
             />
           ))}
         </div>
-      </div> */}
+      </div>
     </section>
   )
 }

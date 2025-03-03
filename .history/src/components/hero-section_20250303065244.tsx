@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-// import { X } from "lucide-react"
+import { X } from "lucide-react"
 
 export default function Hero() {
   const [currentBgIndex, setCurrentBgIndex] = useState(0)
-  // const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const backgroundImages = [
     "/images/background/hero-bg1.png",
