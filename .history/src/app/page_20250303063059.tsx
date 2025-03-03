@@ -12,7 +12,7 @@ export default function Home() {
         <About />
         <Team />
         <Gallery />
-        <RegForm />
+        {/* <RegForm /> */}
       </div>
       </>
   ) 

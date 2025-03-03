@@ -5,7 +5,7 @@ export default function Team() {
     return (
         <section id="team" className="px-4 py-12 md:py-16">
         <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
+        <h1 className="text-3xl text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
                 संस्थापक </span> के बारे में
                 </h1>
@@ -50,8 +50,10 @@ export default function Team() {
         </div>
     </div>
     </section>
+
     )
 }
+
 
 
 

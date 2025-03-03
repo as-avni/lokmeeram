@@ -5,7 +5,7 @@ export default function Team() {
     return (
         <section id="team" className="px-4 py-12 md:py-16">
         <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
+        <h1 className="text-3xl text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
                 संस्थापक </span> के बारे में
                 </h1>
@@ -50,9 +50,65 @@ export default function Team() {
         </div>
     </div>
     </section>
+
     )
 }
 
+
+{/* <h2 className="text-3xl font-bold mb-6 text-center">About Dignitories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[1].map((i) => (
+                <Card key={i} className="overflow-hidden rounded-3xl">
+                <CardContent className="p-0">
+                    <Image
+                    src="/images/11.png"
+                    alt={`Dignitory ${i}`}
+                    width={300}
+                    height={300}
+                    className="w-full h-80 object-cover"
+                    />
+                    <div className="p-4">
+                    <h3 className="font-semibold mb-2">Rakesh</h3>
+                    <p className="text-sm text-gray-600">CEO</p>
+                    </div>
+                </CardContent>
+                </Card>
+            ))}
+            {[2].map((i) => (
+                <Card key={i} className="overflow-hidden rounded-3xl">
+                <CardContent className="p-0">
+                    <Image
+                    src="/images/12.png"
+                    alt={`Dignitory ${i}`}
+                    width={300}
+                    height={300}
+                    className="w-full h-80 object-cover"
+                    />
+                    <div className="p-4">
+                    <h3 className="font-semibold mb-2">Praveen</h3>
+                    <p className="text-sm text-gray-600">Parate</p>
+                    </div>
+                </CardContent>
+                </Card>
+            ))}
+            {[3].map((i) => (
+                <Card key={i} className="overflow-hidden rounded-3xl">
+                <CardContent className="p-0">
+                    <Image
+                    src="/images/13.png"
+                    alt={`Dignitory ${i}`}
+                    width={300}
+                    height={300}
+                    className="w-full h-80 object-cover"
+                    />
+                    <div className="p-4">
+                    <h3 className="font-semibold mb-2">Raghuveer</h3>
+                    <p className="text-sm text-gray-600">Vasuliwala</p>
+                    </div>
+                </CardContent>
+                </Card>
+            ))}
+        </div> */}
 
 
 

@@ -7,7 +7,7 @@ import RegForm from "@/components/form"
 export default function Home() {
   return (
     <>
-      <div className="bg-[#fff5ef] ">
+      <div>
         <Hero />
         <About />
         <Team />

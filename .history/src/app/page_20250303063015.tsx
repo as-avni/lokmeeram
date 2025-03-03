@@ -2,7 +2,7 @@ import About from "./about/page"
 import Hero from "@/components/hero-section"
 import Team from "./team/page"
 import Gallery from "./photo-gallery/page"
-import RegForm from "@/components/form"
+// import RegForm from "@/components/form"
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <About />
         <Team />
         <Gallery />
-        <RegForm />
+        {/* <RegForm /> */}
       </div>
       </>
   ) 
