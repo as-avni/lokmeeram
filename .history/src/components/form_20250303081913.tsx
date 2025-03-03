@@ -67,7 +67,7 @@ export default function RegForm() {
       const result = await response.json();
 
       if (result.success) {
-        setSuccess("फॉर्म सफलतापूर्वक सबमिट हो गया!");
+        setSuccess("Form submitted successfully!");
         setFormData({ name: "", dob: "", phone: "", email: "", address: "", message: "" });
         setScreenshot(null);
         setFileName("");
@@ -76,7 +76,7 @@ export default function RegForm() {
         throw new Error(result.message || "Submission failed");
       }
     } catch (error) {
-      console.error("❌फॉर्म सबमिट करने में त्रुटि हुई:", error);
+      console.error("❌ Error submitting form:", error);
       setError("Failed to submit the form. Please try again.");
     } finally {
       setLoading(false);
@@ -90,6 +90,8 @@ export default function RegForm() {
     <h2 className="text-3xl text-center md:text-5xl px-20 font-bold mb-2 md:mb-4 text-black">
       हमारे <span className="text-orange-600">संगठन</span> में शामिल हों
     </h2>
+    {success && <p className="text-green-600 text-center ">{success}</p>}
+    {error && <p className="text-red-600 text-center">{error}</p>}
 
     {step === 1 && (
       <form onSubmit={(e) => e.preventDefault()} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black border-orange-300 hover:border-orange-500">
@@ -124,10 +126,6 @@ export default function RegForm() {
         <Button type="button" className="w-full text-xl rounded-full bg-orange-200 hover:bg-orange-300 text-black mt-40 mb-4" onClick={handleNext}>
           अगला
         </Button>
-
-        {success && <p className="text-green-600 text-center">{success}</p>}
-        {error && <p className="text-red-600 text-center">{error}</p>}
-
       </form>
     )}
 
@@ -142,10 +140,10 @@ export default function RegForm() {
           <Input type="file" accept="image/*" onChange={handleFileChange} className="text-black border-orange-200 hover:border-orange-400" />
           {fileName && <p className="text-sm mt-1 text-black">चयनित: {fileName}</p>}
         </div>
-        <Button type="submit" className="w-full bg-orange-200 hover:bg-orange-300 text-black text-base" disabled={loading || !screenshot}>
+        <Button type="submit" className="w-full bg-green-500 hover:bg-green-500 text-black text-base" disabled={loading || !screenshot}>
           {loading ? "सबमिट हो रहा है..." : "सबमिट करें"}
         </Button>
-        <Button type="button" className="w-full bg-orange-200 hover:bg-orange-300 mt-2 text-black text-base" onClick={() => setStep(1)}>
+        <Button type="button" className="w-full bg-green-300 hover:bg-green-500 mt-2 text-black text-base" onClick={() => setStep(1)}>
           वापस जाएँ
         </Button>
       </form>

@@ -145,7 +145,7 @@ export default function RegForm() {
         <Button type="submit" className="w-full bg-orange-200 hover:bg-orange-300 text-black text-base" disabled={loading || !screenshot}>
           {loading ? "सबमिट हो रहा है..." : "सबमिट करें"}
         </Button>
-        <Button type="button" className="w-full bg-orange-200 hover:bg-orange-300 mt-2 text-black text-base" onClick={() => setStep(1)}>
+        <Button type="button" className="w-full bg-green-300 hover:bg-green-500 mt-2 text-black text-base" onClick={() => setStep(1)}>
           वापस जाएँ
         </Button>
       </form>

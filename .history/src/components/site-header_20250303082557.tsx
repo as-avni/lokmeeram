@@ -38,7 +38,7 @@ return (
 
         {/* डेस्कटॉप बटन */}
         <Link href="/#reg-form" className="relative font-semibold after:absolute after:bottom-0 after:left-0">
-            <Button className="bg-orange-400 text-black hover:bg-orange-300 text-lg px-4 py-2 rounded-full hidden md:block">सदस्य बनें</Button>
+            <Button className="bg-orange-300 text-black hover:bg-orange-300 text-lg px-4 py-2 rounded-full hidden md:block">सदस्य बनें</Button>
           </Link>
 
         {/* मोबाइल मेनू बटन */}

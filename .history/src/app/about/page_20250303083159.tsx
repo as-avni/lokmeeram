@@ -31,7 +31,7 @@ export default function About() {
                     alt="Deity"
                     width={400}
                     height={400}
-                    className="rounded-lg w-full md:w-[50%] h-[80%]"
+                    className="rounded-lg w-full md:w-[50%] -my-14 h-[]"
                     />
                 </div>
             </div>

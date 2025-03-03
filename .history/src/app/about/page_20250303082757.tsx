@@ -25,13 +25,13 @@ export default function About() {
                         संस्कृत को मजबूत करें जिस की प्रकृति फिर से ठीक हो सके।
                     </p>
                 </div>
-                <div className="flex-1 flex justify-center w-full md:w-1/2 mb-4">
+                <div className="flex-1 flex justify-center w-full">
                     <Image
                     src={`/images/ram-ji.png`}
                     alt="Deity"
                     width={400}
                     height={400}
-                    className="rounded-lg w-full md:w-[50%] h-[80%]"
+                    className="rounded-lg w-full md:w-[50%]"
                     />
                 </div>
             </div>
