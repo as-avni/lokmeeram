@@ -123,7 +123,7 @@ export default function RegForm() {
           <label className="block text-xl font-medium mb-2 text-black">संदेश</label>
           <Textarea name="message" value={formData.message} onChange={handleChange} placeholder="अपना संदेश यहाँ लिखें" className="text-black border-orange-300 hover:border-orange-500" />
         </div>
-        <Button type="button" className="w-full text-xl rounded-full bg-green-300 hover:bg-orange-600 text-black mt-40 mb-4" onClick={handleNext}>
+        <Button type="button" className="w-full text-xl rounded-full bg-orange-200 hover:bg-orange-300 text-black mt-40 mb-4" onClick={handleNext}>
           अगला
         </Button>
       </form>
