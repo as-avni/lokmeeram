@@ -135,7 +135,7 @@ export default function RegForm() {
       <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-4 p-6 text-2xl text-black">
         <div className="text-center">
           <p className="text-2xl font-bold mb-2 text-black">भुगतान करने के लिए स्कैन करें</p>
-          <Image src="/images/payment-qr.png" alt="भुगतान QR कोड" width={300} height={300} className="mx-auto" />
+          <Image src="/imagespayment-qr.png" alt="भुगतान QR कोड" width={300} height={300} className="mx-auto" />
         </div>
         <div>
           <label className="block text-xl font-semi-bold mb-3 text-black">भुगतान स्क्रीनशॉट अपलोड करें</label>

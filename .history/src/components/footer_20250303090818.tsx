@@ -88,7 +88,7 @@
         </div>
 
         <div className="border-t border-black">
-            <div className="container mx-auto px-4 py-4 flex justify-center font-semibold text-black">
+            <div className="container mx-auto px-4 py-4 flex justify-center font-semibold text-bla">
             <p className="text-lg">© 2025 - सर्वाधिकार सुरक्षित - लोक के राम की आधिकारिक वेबसाइट, भारत</p>
             {/* <Image src="/placeholder.svg" alt="NIC Logo" width={100} height={30} className="object-contain" /> */}
             </div>
