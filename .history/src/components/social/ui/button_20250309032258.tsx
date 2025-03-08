@@ -1,13 +1,10 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "default" | "outline";
-  size?: "default" | "sm" | "lg";
-}
-
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, children, variant = "default", size = "default", ...props }, ref) => {
+const Button = React.forwardRef<
+  HTMLButtonElement,
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+>(({ className, children, variant = "default", size = "default", ...props }, ref) => {
   return (
     <button
       className={cn(
