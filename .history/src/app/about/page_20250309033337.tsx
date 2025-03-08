@@ -14,7 +14,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row border-spacing-2">
                 <div className="flex-1 w-full md:w-1/2 md:mx-10 md:my-4 my-4 md:mb-4 border border-gray-500 shadow-slate-600 shadow-2xl rounded-xl bg-yellow-100 h-[80%]">
                     <p className="text-black mx-5 my-3 text-lg md:text-2xl max-w-lg md:max-w-3xl">
-                        <span className="font-bold">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का अभियान है लोक मै राम ।</span>
+                        <span className="font-bold">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का अभियान है लोक मै राम </span>
                     </p>
                     <p className=" mx-5 font-bold text-black text-lg md:text-2xl max-w-lg md:max-w-xl text-justify">लोक क्या है?</p>
                     <p className="mx-5 text-black text-lg md:text-2xl max-w-lg md:max-w-3xl">लोक वह है जिसमें वनस्पति से बृहस्पति तक सभी कुछ समाया हुआ है।
