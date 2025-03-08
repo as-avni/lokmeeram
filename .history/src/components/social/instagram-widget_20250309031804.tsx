@@ -20,13 +20,13 @@ const InstagramWidget: React.FC<InstagramWidgetProps> = ({ width = 340, height =
       script.async = true;
       script.onload = () => {
         if ((window as typeof window & { instgrm?: { Embeds: { process: () => void } } }).instgrm) {
-          (window as typeof window & { instgrm: { Embeds: { process: () => void } } }).instgrm.Embeds.process();
+          (window as any).instgrm.Embeds.process();
         }
       };
       document.body.appendChild(script);
     } else {
-      if ((window as typeof window & { instgrm?: { Embeds: { process: () => void } } }).instgrm) {
-        (window as typeof window & { instgrm: { Embeds: { process: () => void } } }).instgrm.Embeds.process();
+      if ((window as any).instgrm) {
+        (window as any).instgrm.Embeds.process();
       }
     }
   }, [username]);
