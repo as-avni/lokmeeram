@@ -60,7 +60,7 @@ return (
         </div>
         <div className="flex justify-center my-10">
         <a
-            href="https://www.youtube.com/@LokmeRam/videos"
+            href="https://www.youtube.com/channel/UC1NF71EwP41VdjAU1iXdLkw"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 font-bold text-black bg-orange-200 rounded-lg shadow-md hover:bg-orange-300 transition"

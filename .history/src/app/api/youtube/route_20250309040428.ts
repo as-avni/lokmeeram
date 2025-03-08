@@ -18,14 +18,10 @@ export async function GET() {
     const response = await axios.get(url);
     return NextResponse.json(response.data);
     
-  } catch (error: unknown) {
-    if (axios.isAxiosError(error)) {
-      console.error("YouTube API Error:", error.response?.data || error.message);
-    } else {
-      console.error("YouTube API Error:", error);
-    }
+  } catch (error: any) {
+    console.error("YouTube API Error:", error.response?.data || error.message);
 
-    if (axios.isAxiosError(error) && error.response?.status === 403) {
+    if (error.response?.status === 403) {
       return NextResponse.json({ error: "Access forbidden. Check API key and permissions." }, { status: 403 });
     }
 

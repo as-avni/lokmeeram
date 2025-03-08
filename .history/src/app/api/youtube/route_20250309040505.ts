@@ -25,7 +25,7 @@ export async function GET() {
       console.error("YouTube API Error:", error);
     }
 
-    if (axios.isAxiosError(error) && error.response?.status === 403) {
+    if (error.response?.status === 403) {
       return NextResponse.json({ error: "Access forbidden. Check API key and permissions." }, { status: 403 });
     }
 
