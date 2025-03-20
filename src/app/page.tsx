@@ -3,7 +3,7 @@ import Hero from "@/components/hero-section"
 import Team from "./team/page"
 import Gallery from "./photo-gallery/page"
 import RegForm from "@/components/form"
-import YouTubeSection from "@/components/social/YoutubeSection"
+import YouTubeSection1 from "@/components/social/YT-section"
 import SocialDashboard from "@/components/social/socials"
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         <About />
         <Team />
         <Gallery />
-        <YouTubeSection />
+        <YouTubeSection1/>
         <SocialDashboard/>
         <RegForm />
       </div>
