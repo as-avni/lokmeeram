@@ -28,7 +28,7 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         notosans: ['Noto Sans', 'sans-serif'],
         anekdevanagari: ['Anek Devanagari', 'sans-serif'],
-        khand: ['Khand', 'sans-serif'],
+        
       },
       colors: {
         border: "hsl(var(--border))",

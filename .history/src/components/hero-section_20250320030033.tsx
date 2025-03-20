@@ -40,7 +40,7 @@ export default function Hero() {
           <h1 className="mb-4 text-white text-4xl font-semibold font-khand leading-tight md:text-7xl">
           लोक में राम
           </h1>
-          <p className="mb-4 text-lg md:text-2xl font-anekdevanagari">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का अभियान है, <br></br> लोक में राम ।</p>
+          <p className="mb-4 text-lg md:text-2xl font-kalam">सनातन परंपरा और ऋषि ज्ञान को जन जन तक पहुंचाने का अभियान है, <br></br> लोक मै राम ।</p>
         </div>
       </div>
     </section>
