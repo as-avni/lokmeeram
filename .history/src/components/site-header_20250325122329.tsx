@@ -59,16 +59,16 @@ return (
           <Link href="/" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             होम
           </Link>
+          <Link href="/" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
+            टीम
+          </Link>
           <Link href="/#about" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             हमारे विषय में
           </Link>
-          <Link href="/#team" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
-            संस्थापक
+          <Link href="/#gallery" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
+            फोटो गैलरी
           </Link>
           <Link href="/events" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
-            डोनेट अस 
-          </Link>
-          <Link href="/#gallery" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             आयोजन
           </Link>
           <Link href="/#reg-form" className=" rounded-2xl w-full relative font-semibold after:absolute after:bottom-0 after:left-0">

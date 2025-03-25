@@ -7,7 +7,7 @@ export default function Team() {
         <div className="max-w-6xl mx-auto">
             <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
-                संस्थापकों </span> के 
+                 </span> के 
                 विषय में
             </h1>
 
@@ -26,7 +26,7 @@ export default function Team() {
             <h3 className="text-2xl font-bold mb-1 text-center font-[Poppins]">डॉ. अशोक चतुर्वेदी</h3>
             <p className="text-lg font-semibold text-gray-800 mb-2 prose text-justify">संयुक्त 
             कमिशनर, पंचायत एवं ग्रामीण विकास विभाग, छत्तीसगढ़ शासन</p>
-            <p className="text-lg text-gray-500 prose text-justify">दण्डकारण्य क्षेत्र के बस्तर स्थित दुर्गकोबडल में जन्में श्री डॉ. अशोक हरिवंश <strong> ‘भैया जी’</strong> राजनीति शास्त्र, मानव संसाधन प्रबंधन एवं मानवाधिकार विषयों में उच्च शिक्षा प्राप्त भैया जी प्रशासन में एक उत्कृष्ट अधिकारी के रूप में विद्यमान हैं।
+            <p className="text-lg text-gray-500 prose text-justify">दण्डकारण्य क्षेत्र के बस्तर स्थित दुर्गकोबडल में जन्में श्री डॉ. अशोक हरिवंश <strong> ‘भैया जी’</strong> वर्तमान में छत्तीसगढ़ शासन में ज्वाइंट कलेक्टर पद पर विधुरूप हैं। राजनीति शास्त्र, मानव संसाधन प्रबंधन एवं मानवाधिकार विषयों में उच्च शिक्षा प्राप्त भैया जी प्रशासन में एक उत्कृष्ट अधिकारी के रूप में विद्यमान हैं।
 
 जगद्गुरु श्रीरामानुजाचार्य की कृपा एवं माता-पिता के निर्देश में बचपन से ही धर्म के क्षेत्र में “राम और राष्ट्र एक” मंत्र को जीवन का ध्येय मानुषि, धर्म एवं राष्ट्र की सेवा में समर्पित होकर श्री रामकथा वाचक के रूप में प्रचार-प्रसार कर रहे हैं।
 
@@ -45,8 +45,8 @@ export default function Team() {
                 className="object-cover rounded-full"
                 />
             </div>
-            <h3 className="text-2xl font-bold mb-1 text-center font-[Poppins]">नागेन्द्र दुबे </h3>
-            <p className="text-lg font-semibold text-gray-800 mb-2 prose text-center">संस्थापक, लोक में राम शोध संस्थान</p>
+            <h3 className="text-2xl font-bold mb-1 text-center font-[Poppins]">डॉ नागेन्द्र दुबे </h3>
+            <p className="text-lg font-semibold text-gray-800 mb-2 prose text-justify">संपादक संस्थापक लोक में राम शोध संस्थान</p>
             <p className="text-lg text-gray-500 prose text-justify">एक प्रतिष्ठित <strong>शिक्षाविद्, मोटिवेशनल स्पीकर और काउंसलर</strong>, जिन्हें शिक्षा, पारिवारिक और व्यक्तिगत मार्गदर्शन में व्यापक अनुभव है। उन्होंने <strong>300 से अधिक स्कूलों का दौरा</strong> किया और <strong>4,000+ छात्रों</strong> को प्रेरित किया है। वे <strong>टॉपर्स एजुकेशनल सोसायटी</strong> के सचिव, <strong>विजडम वे हायर सेकेंडरी स्कूल</strong> के निदेशक और <strong>&quot;सतत् छत्तीसगढ़&quot;</strong> पत्रिका के संपादक हैं। <strong>राष्ट्रीय पुस्तक मेला, साहित्य महोत्सव और शिक्षा मेले</strong> के आयोजक होने के नाते, वे शिक्षा और युवा सशक्तिकरण के लिए प्रतिबद्ध हैं। उनके प्रेरणादायक संवाद कौशल, व्यवहारगत समझ और आध्यात्मिक दृष्टिकोण ने उन्हें एक प्रभावशाली व्यक्तित्व बनाया है।
             </p>
             </CardContent>

@@ -32,7 +32,7 @@ export default function Gallery() {
 
       <div className="relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center text-black">
-        हमारे <span className="text-orange-600">आयोजन</span>
+        हमारे <span className="text-orange-600">गैलरी</span>
         </h2>
 
         <Carousel className="max-w-5xl mx-auto " opts={{ loop: true, startIndex: currentIndex }}>

@@ -46,7 +46,7 @@ export default function Team() {
                 />
             </div>
             <h3 className="text-2xl font-bold mb-1 text-center font-[Poppins]">नागेन्द्र दुबे </h3>
-            <p className="text-lg font-semibold text-gray-800 mb-2 prose text-center">संस्थापक, लोक में राम शोध संस्थान</p>
+            <p className="text-lg font-semibold text-gray-800 mb-2 prose text-justify">संस्थापक, लोक में राम शोध संस्थान</p>
             <p className="text-lg text-gray-500 prose text-justify">एक प्रतिष्ठित <strong>शिक्षाविद्, मोटिवेशनल स्पीकर और काउंसलर</strong>, जिन्हें शिक्षा, पारिवारिक और व्यक्तिगत मार्गदर्शन में व्यापक अनुभव है। उन्होंने <strong>300 से अधिक स्कूलों का दौरा</strong> किया और <strong>4,000+ छात्रों</strong> को प्रेरित किया है। वे <strong>टॉपर्स एजुकेशनल सोसायटी</strong> के सचिव, <strong>विजडम वे हायर सेकेंडरी स्कूल</strong> के निदेशक और <strong>&quot;सतत् छत्तीसगढ़&quot;</strong> पत्रिका के संपादक हैं। <strong>राष्ट्रीय पुस्तक मेला, साहित्य महोत्सव और शिक्षा मेले</strong> के आयोजक होने के नाते, वे शिक्षा और युवा सशक्तिकरण के लिए प्रतिबद्ध हैं। उनके प्रेरणादायक संवाद कौशल, व्यवहारगत समझ और आध्यात्मिक दृष्टिकोण ने उन्हें एक प्रभावशाली व्यक्तित्व बनाया है।
             </p>
             </CardContent>
