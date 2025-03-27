@@ -85,7 +85,7 @@ export default function RegForm() {
 
   return (
 
-<section id="reg-form" className="mx-auto px-4 py-10 flex justify-center items-center bg-[url('/images/background/form-bg.png')] bg-cover bg-center bg-no-repeat">
+<section id="reg-form" className="mx-auto px-4 py-10 flex justify-center items-center bg">
   <div className="w-full">
     <h2 className="text-3xl text-center md:text-5xl px-20 font-bold mb-2 md:mb-4 text-black">
       हमारे <span className="text-orange-600">संगठन</span> में शामिल हों

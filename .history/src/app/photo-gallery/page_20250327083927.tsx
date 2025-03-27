@@ -43,7 +43,7 @@ export default function Gallery() {
               key={i} 
               className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative overflow-visible ${
                   index === 1 
-                    ? "scale-110 sm:scale-110 z-30 translate-y-0" 
+                    ? "scale-110 sm:scale-1 z-30 translate-y-0" 
                     : "scale-90 sm:opacity-80 opacity-100 z-10"
                 } ${index === 0 ? "sm:-translate-x-4 sm:left-0 left-[-5%]" : index === 2 ? "sm:translate-x-4 sm:right-0 right-[-5%]" : ""}`}
             >

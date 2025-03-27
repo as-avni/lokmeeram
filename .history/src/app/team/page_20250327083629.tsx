@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function Team() {
     return (
-        <section id="team" className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-blend-color-burn bg-cover bg-center bg-no-repeat">
+        <section id="team" className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-contain bg-center bg-no-repeat o">
         <div className="max-w-6xl mx-auto">
             <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4">
                 <span className="text-orange-600">
