@@ -31,7 +31,7 @@ return (
             संस्थापक
           </Link>
           <Link href="/events" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
-            डोनेट अस 
+            डोनेट करें
           </Link>
           <Link href="/#gallery" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             आयोजन
@@ -66,7 +66,7 @@ return (
             संस्थापक
           </Link>
           <Link href="/events" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
-            डोनेट अस 
+            डोनेट करें 
           </Link>
           <Link href="/#gallery" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             आयोजन

@@ -25,7 +25,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section id="gallery" className="relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4">
+    <section id="gallery" className="relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4 bg-[url('/images/background/gallery-bg.png')] bg-cover bg-center bg-no-repeat">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" 
         style={{ backgroundImage: "url('/images/about-us-bg.png')" }}
@@ -40,22 +40,22 @@ export default function Gallery() {
           <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-2 sm:gap-4">
             {images.map((i, index) => (
               <CarouselItem 
-                key={i} 
-              className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative ${
+              key={i} 
+              className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative overflow-visible ${
                   index === 1 
-                    ? "scale-110 sm:scale-125 z-20 sm:translate-y-2 translate-y-0 overflow-visible" 
+                    ? "scale-110 sm:scale-105 z-30 translate-y-0" 
                     : "scale-90 sm:opacity-80 opacity-100 z-10"
-                } ${index === 0 ? "sm:left-[5%] left-0" : index === 2 ? "sm:right-[5%] right-0" : ""}`}
-              >
-                <Image
-                  src={`/images/gallery/${i}.png`}
-                  alt={`Gallery Image ${i}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
-                  onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
-                />
-              </CarouselItem>
+                } ${index === 0 ? "sm:-translate-x-4 sm:left-0 left-[-5%]" : index === 2 ? "sm:translate-x-4 sm:right-0 right-[-5%]" : ""}`}
+            >
+              <Image
+                src={`/images/gallery/${i}.png`}
+                alt={`Gallery Image ${i}`}
+                width={800}
+                height={600}
+                className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
+                onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
+              />
+            </CarouselItem>
             ))}
           </CarouselContent>
           <CarouselPrevious onClick={() => setImages((prev) => [prev[2], prev[0], prev[1]])} />

@@ -26,10 +26,10 @@
                 <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-orange-500"></span>
                 </h3>
                 <ul className="space-y-1 md:space-y-2">
-                <li><Link href="/#about" className="text-base font-semibold hover:text-orange-600 text-black">हमारे बारे में</Link></li>
-                <li><Link href="/events" className="text-base font-semibold hover:text-orange-600 text-black">आयोजन</Link></li>
-                <li><Link href="/#gallery" className="text-base font-semibold hover:text-orange-600 text-black">फोटो गैलरी</Link></li>
-                <li><Link href="/#team" className="text-base font-semibold hover:text-orange-600 text-black">संस्थापक</Link></li>
+                <li><Link href="/#about" className="text-base font-semibold hover:text-orange-600 text-black">हमारे विषय में</Link></li>
+                <li><Link href="/#gallery" className="text-base font-semibold hover:text-orange-600 text-black">आयोजन</Link></li>
+                <li><Link href="/events" className="text-base font-semibold hover:text-orange-600 text-black">फोटो गैलरी</Link></li>
+                <li><Link href="/#team" className="text-base font-semibold hover:text-orange-600 text-black">हमारे संस्थापक</Link></li>
                 </ul>
             </div>
 
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div className="border-t border-black text-left">
+        <div className="border-t border-black text-center">
             <div className="container mx-auto px-4 py-4 font-semibold text-black">
             <p className="text-sm md:text-lg">© 2025 - सर्वाधिकार सुरक्षित - लोक के राम की आधिकारिक वेबसाइट, भारत</p>
             </div>
