@@ -6,16 +6,16 @@
     return (
         <footer className="text-white bg-[url('/images/footer-bg.png')] bg-cover h-full md:h-[400]">
         <div className="container mx-auto px-4 py-8 mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-8">
             {/* Logo Section */}
-            <div className="flex flex-col my-auto md:my-auto">
+            <div className="flex flex-col items-start">
                 <Link href="/">
                     <Image
                     src="/images/lok-me-ram-logo.png"
                     alt="Lok Me Ram Logo"
                     width={180}
                     height={50}
-                    className="object-cover px-0 ml-0 md:ml-0"
+                    className="object- px-0 mx-auto md:mx-0"
                     />
                 </Link>
             </div>
@@ -39,7 +39,7 @@
                 <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-orange-500"></span>
                 </h3>
                 <div className="text-base font-semibold text-black space-y-1 md:space-y-2">
-                <p>H 401, 3rd Floor, Ashoka Heights, Mowa, Raipur, Chhattisgarh 492005</p>
+                <p>एच 401, तीसरी मंज़िल, अशोका हाइट्स, मावा, रायपुर, छत्तीसगढ़ 492005</p>
                 <p>📞 <a href="tel:+91 9669175192" className="hover:underline hover:text-orange-600">+91 9669175192</a></p>
                 <p>📠 <a href="tel:+91 9669175192" className="hover:underline hover:text-orange-600">+91 9669175192</a></p>
                 </div>

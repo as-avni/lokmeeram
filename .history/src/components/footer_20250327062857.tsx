@@ -15,7 +15,7 @@
                     alt="Lok Me Ram Logo"
                     width={180}
                     height={50}
-                    className="object-cover px-0 ml-0 md:ml-0"
+                    className="object-cover px-0"
                     />
                 </Link>
             </div>

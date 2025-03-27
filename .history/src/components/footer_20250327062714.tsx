@@ -8,14 +8,14 @@
         <div className="container mx-auto px-4 py-8 mt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
             {/* Logo Section */}
-            <div className="flex flex-col my-auto md:my-auto">
+            <div className="flex flex-col items-start md:mx-auto my-2 md:my-auto">
                 <Link href="/">
                     <Image
                     src="/images/lok-me-ram-logo.png"
                     alt="Lok Me Ram Logo"
                     width={180}
                     height={50}
-                    className="object-cover px-0 ml-0 md:ml-0"
+                    className="object-cover px-0"
                     />
                 </Link>
             </div>

@@ -37,11 +37,11 @@ export default function Gallery() {
         </h2>
 
         <Carousel className="max-w-5xl mx-auto overflow-visible relative">
-          <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-2 sm:gap-4">
+          <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-4">
             {images.map((i, index) => (
               <CarouselItem 
                 key={i} 
-              className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative ${
+              className={`basis-full sm:basis-1/3 transition-transform duration-500 ease-in-out relative ${
                   index === 1 
                     ? "scale-110 sm:scale-125 z-20 sm:translate-y-2 translate-y-0 overflow-visible" 
                     : "scale-90 sm:opacity-80 opacity-100 z-10"
@@ -52,7 +52,7 @@ export default function Gallery() {
                   alt={`Gallery Image ${i}`}
                   width={800}
                   height={600}
-                  className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
+                  className="w-full h-[250px] sm:h-[500px] object-contain cursor-pointer border-black"
                   onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
                 />
               </CarouselItem>

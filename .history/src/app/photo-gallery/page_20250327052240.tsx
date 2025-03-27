@@ -1,28 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { 
   Carousel, 
   CarouselContent, 
-  CarouselItem, 
-  CarouselPrevious, 
-  CarouselNext 
+  CarouselItem 
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [images, setImages] = useState([1, 2, 3]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setImages((prevImages) => {
-        return [prevImages[1], prevImages[2], prevImages[0]];
-      });
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section id="gallery" className="relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4">
@@ -37,29 +24,25 @@ export default function Gallery() {
         </h2>
 
         <Carousel className="max-w-5xl mx-auto overflow-visible relative">
-          <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-2 sm:gap-4">
-            {images.map((i, index) => (
+          <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-4">
+            {[1, 2, 3].map((i, index) => (
               <CarouselItem 
                 key={i} 
-              className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative ${
-                  index === 1 
-                    ? "scale-110 sm:scale-125 z-20 sm:translate-y-2 translate-y-0 overflow-visible" 
-                    : "scale-90 sm:opacity-80 opacity-100 z-10"
-                } ${index === 0 ? "sm:left-[5%] left-0" : index === 2 ? "sm:right-[5%] right-0" : ""}`}
+                className={`basis-full md:basis-1/3 transition-transform ${
+                  index === 1 ? "scale-110 z-20" : "scale-90 opacity-80 z-0"
+                }`}
               >
                 <Image
                   src={`/images/gallery/${i}.png`}
                   alt={`Gallery Image ${i}`}
                   width={800}
                   height={600}
-                  className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
+                  className="w-full h-[500px] md:h-[350px] object-cover rounded-3xl cursor-pointer border-t-4 border-b-4 border-black"
                   onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
                 />
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious onClick={() => setImages((prev) => [prev[2], prev[0], prev[1]])} />
-          <CarouselNext onClick={() => setImages((prev) => [prev[1], prev[2], prev[0]])} />
         </Carousel>
       </div>
 

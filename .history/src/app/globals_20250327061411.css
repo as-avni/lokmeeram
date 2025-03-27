@@ -22,9 +22,7 @@
   }
 }
 
-html, body {
-  overflow-x: hidden;
-}
+
 
 body {
   color: var(--foreground);

@@ -37,22 +37,22 @@ export default function Gallery() {
         </h2>
 
         <Carousel className="max-w-5xl mx-auto overflow-visible relative">
-          <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-2 sm:gap-4">
+          <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-0">
             {images.map((i, index) => (
               <CarouselItem 
                 key={i} 
-              className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative ${
+                className={`basis-full md:basis-1/3 transition-transform duration-500 ease-in-out relative ${
                   index === 1 
-                    ? "scale-110 sm:scale-125 z-20 sm:translate-y-2 translate-y-0 overflow-visible" 
-                    : "scale-90 sm:opacity-80 opacity-100 z-10"
-                } ${index === 0 ? "sm:left-[5%] left-0" : index === 2 ? "sm:right-[5%] right-0" : ""}`}
+                    ? "scale-125 z-20 translate-y-4" 
+                    : "scale-90 opacity-80 z-10"
+                } ${index === 0 ? "left-[10%]" : index === 2 ? "right-[10%]" : ""}`}
               >
                 <Image
                   src={`/images/gallery/${i}.png`}
                   alt={`Gallery Image ${i}`}
                   width={800}
                   height={600}
-                  className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
+                  className="w-full h-[250px] md:h-[500px] object-fill rounded-3xl cursor-pointer border-t-4 border-b-4 border-black"
                   onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
                 />
               </CarouselItem>
