@@ -25,7 +25,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section id="gallery" className="relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4 bg-[url('/images/background/gallery-bg.png')] bg-cover bg-center bg-no-repeat bg-opacity-10">
+    <section id="gallery" className="relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4 bg-[url('/images/background/gallery-bg.png')] bg-cover bg-center bg-no-repeat bg-opacity-">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" 
         style={{ backgroundImage: "url('/images/about-us-bg.png')" }}
