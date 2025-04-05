@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Gallery() {
+  // const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [images, setImages] = useState([1, 2, 3, 4, 5]);
 
   useEffect(() => {
