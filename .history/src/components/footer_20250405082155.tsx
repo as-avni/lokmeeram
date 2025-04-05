@@ -21,8 +21,7 @@
             </div>
 
             <div className="py-6 md:py-10 text-left">
-                <h3 className="text-xl md:text-2xl font-semibold mb-3 relative inline-block text-black">
-                    लिंक्स
+                <h3 className="text-xl md:text-2xl font-semibold mb-3 relative inline-block text-black">लिंक्स
                 <span className="absolute bottom-0 left-0 w-1/2 h-0.5 bg-orange-500"></span>
                 </h3>
                 <ul className="space-y-1 md:space-y-2">
@@ -72,11 +71,7 @@
 
         <div className="border-t border-black text-center">
             <div className="container mx-auto px-4 py-4 font-semibold text-black">
-            <p className="text-sm md:text-lg">
-                <Link href="https://www.anonymouslabtechnologies.com/">
-                    © 2025 - सर्वाधिकार सुरक्षित - लोक में राम शोध संस्थान की आधिकारिक वेबसाइट, भारत
-                </Link>
-            </p>
+            <p className="text-sm md:text-lg">© 2025 - सर्वाधिकार सुरक्षित - लोक में राम शोध संस्थान की आधिकारिक वेबसाइट, भारत</p>
             </div>
         </div>
         </footer>

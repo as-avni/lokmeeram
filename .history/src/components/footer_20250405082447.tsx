@@ -72,11 +72,9 @@
 
         <div className="border-t border-black text-center">
             <div className="container mx-auto px-4 py-4 font-semibold text-black">
-            <p className="text-sm md:text-lg">
-                <Link href="https://www.anonymouslabtechnologies.com/">
-                    © 2025 - सर्वाधिकार सुरक्षित - लोक में राम शोध संस्थान की आधिकारिक वेबसाइट, भारत
-                </Link>
-            </p>
+            <Link href="/lok-me-ram-foundation">
+            </Link>
+            <p className="text-sm md:text-lg">© 2025 - सर्वाधिकार सुरक्षित - लोक में राम शोध संस्थान की आधिकारिक वेबसाइट, भारत</p>
             </div>
         </div>
         </footer>
