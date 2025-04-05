@@ -9,23 +9,26 @@ import {
   CarouselNext 
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [images, setImages] = useState([1, 2, 3]);
+  const [images, setImages] = useState([1, 2, 3, 4, 5]);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setImages((prevImages) => {
-        return [prevImages[1], prevImages[2], prevImages[0]];
-      });
+      setImages((prevImages) => [...prevImages]);
     }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="gallery" className="relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4 bg-[url('/images/background/gallery-bg.png')] bg-cover bg-center bg-no-repeat bg-opacity-10">
+    <section 
+  id="gallery" 
+  className={`relative mx-auto px-4 py-12 h-auto md:h-[700px] mt-4 
+    bg-[url('/images/background/gallery-bg.png')] 
+    bg-cover bg-center bg-no-repeat bg-opacity-10`}>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" 
         style={{ backgroundImage: "url('/images/about-us-bg.png')" }}
@@ -40,22 +43,24 @@ export default function Gallery() {
           <CarouselContent className="flex justify-center items-center flex-nowrap overflow-visible relative z-10 gap-2 sm:gap-4">
             {images.map((i, index) => (
               <CarouselItem 
-              key={i} 
-              className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative overflow-visible ${
+                key={`image-${i}-${index}`} 
+                className={`basis-1/3 sm:basis-1/3 transition-transform duration-500 ease-in-out relative overflow-visible ${
                   index === 1 
                     ? "scale-110 sm:scale-110 z-30 translate-y-0" 
                     : "scale-90 sm:opacity-80 opacity-100 z-10"
                 } ${index === 0 ? "sm:-translate-x-4 sm:left-0 left-[-5%]" : index === 2 ? "sm:translate-x-4 sm:right-0 right-[-5%]" : ""}`}
-            >
-              <Image
-                src={`/images/gallery/${i}.png`}
-                alt={`Gallery Image ${i}`}
-                width={800}
-                height={600}
-                className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
-                onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
-              />
-            </CarouselItem>
+              >
+                <Link href="https://forms.gle/TJakbxri22U5yDy48" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={`/images/gallery/${i}.png`}
+                  alt={`Gallery Image ${i}`}
+                  width={800}
+                  height={600}
+                  className="w-full h-[200px] sm:h-[500px] object-contain cursor-pointer border-black"
+                  // onClick={() => setSelectedImage(`/images/gallery/${i}.png`)}
+                />
+                </Link>
+              </CarouselItem>
             ))}
           </CarouselContent>
           <CarouselPrevious onClick={() => setImages((prev) => [prev[2], prev[0], prev[1]])} />
@@ -63,7 +68,7 @@ export default function Gallery() {
         </Carousel>
       </div>
 
-      {selectedImage && (
+      {/* {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50" onClick={() => setSelectedImage(null)}>
           <div className="relative p-4" onClick={(e) => e.stopPropagation()}>
             <button 
@@ -75,7 +80,7 @@ export default function Gallery() {
             <Image src={selectedImage} alt="Selected" width={1200} height={800} className="max-w-full max-h-screen rounded-lg object-contain" />
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 }
