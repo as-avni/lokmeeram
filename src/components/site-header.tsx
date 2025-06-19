@@ -36,6 +36,9 @@ return (
           <Link href="/#gallery" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
             आयोजन
           </Link>
+          <Link href="https://ramcharitmanas-ten.vercel.app/" className="relative text-black hover:text-orange-700 text-lg font-semibold after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-orange-700 after:transition-all after:duration-300 hover:after:w-full">
+            श्रीरामचरितमानस
+          </Link>
         </nav>
 
         {/* डेस्कटॉप बटन */}
