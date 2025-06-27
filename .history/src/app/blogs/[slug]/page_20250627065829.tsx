@@ -18,7 +18,7 @@ export default function BlogDetail() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-12 mt-20">
       <h1 className="text-4xl font-bold text-orange-800 mb-1">{post.title}</h1>
-      <p className="text-lg text-gray-600 font-s mb-1">लेखक: लोक में राम टीम</p>
+      <p className="text-lg text-gray-600 font-semibold mb-1">लेखक: लोक में राम टीम</p>
       <p className="text-lg font-semibold text-gray-600 mb-4">{post.date}</p>
       <Image
         src={post.image}
