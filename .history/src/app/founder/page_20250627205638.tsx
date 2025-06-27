@@ -4,7 +4,7 @@ export default function Founders() {
     return (
         <section
             id="team"
-            className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-opacity-50 bg-cover bg-center bg-no-repeat bg-blend-color-burn"
+            className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-op bg-cover bg-center bg-no-repeat bg-blend-color-burn"
         >
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4 mt-20">

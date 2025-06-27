@@ -1,4 +1,4 @@
-// src/lib/blogService.ts
+
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase"; // make sure path is correct
 

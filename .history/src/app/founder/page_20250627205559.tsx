@@ -4,7 +4,7 @@ export default function Founders() {
     return (
         <section
             id="team"
-            className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-opacity-50 bg-cover bg-center bg-no-repeat bg-blend-color-burn"
+            className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-cover bg-center bg-no-repeat bg-blend-color-burn"
         >
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4 mt-20">
@@ -26,7 +26,7 @@ export default function Founders() {
                         </div>
                         <h3 className="text-2xl font-bold mb-1 text-center font-[Poppins] text-black">नागेन्द्र दुबे </h3>
                             <p className="text-lg font-semibold text-gray-800 mb-2 text-center">संस्थापक, लोक में राम शोध संस्थान</p>
-                            <p className="text-xl text-black w-full text-justify">
+                            <p className="text-xl text-black w-full text-justify bg-white">
                                 एक प्रतिष्ठित <strong>शिक्षाविद्, मोटिवेशनल स्पीकर और काउंसलर</strong>, जिन्हें शिक्षा, पारिवारिक और व्यक्तिगत मार्गदर्शन में व्यापक अनुभव है। उन्होंने <strong>300 से अधिक स्कूलों का दौरा</strong> किया और <strong>4,000+ छात्रों</strong> को प्रेरित किया है। 
                                 वे <strong>टॉपर्स एजुकेशनल सोसायटी</strong> के सचिव, <strong>विजडम वे हायर सेकेंडरी स्कूल</strong> के निदेशक और <strong>&quot;सतत् छत्तीसगढ़&quot;</strong> पत्रिका के संपादक हैं। <strong>राष्ट्रीय पुस्तक मेला, साहित्य महोत्सव और शिक्षा मेले</strong> के आयोजक होने के नाते, वे शिक्षा और युवा सशक्तिकरण के लिए प्रतिबद्ध हैं। 
                                 उनके प्रेरणादायक संवाद कौशल, व्यवहारगत समझ और आध्यात्मिक दृष्टिकोण ने उन्हें एक प्रभावशाली व्यक्तित्व बनाया है।

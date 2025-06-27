@@ -4,13 +4,13 @@ export default function Founders() {
     return (
         <section
             id="team"
-            className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-opacity-50 bg-cover bg-center bg-no-repeat bg-blend-color-burn"
+            className="px-4 py-12 md:py-16 bg-[url('/images/background/team-bg.png')] bg-cover bg-center bg-no-repeat bg-blend-color-burn"
         >
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-3xl text-black text-center md:text-5xl px-20 font-bold mb-2 md:mb-4 mt-20">
                     <span className="text-orange-600">हमारे</span> संस्थापक
                 </h1>
-
+            className="px-4 py-12 md:py-16 bg-[url('/images/background/founders-bg.png')] bg-cover bg-center bg-no-repeat bg-blend-color-burn"
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
 
                     {/* Nagendra Dubey */}
@@ -32,7 +32,6 @@ export default function Founders() {
                                 उनके प्रेरणादायक संवाद कौशल, व्यवहारगत समझ और आध्यात्मिक दृष्टिकोण ने उन्हें एक प्रभावशाली व्यक्तित्व बनाया है।
                             </p>
                     </div>
-
                     {/* Dr. Ashok Chaturvedi */}
                     <div className="max-w-5xl mx-auto items-center">
                         <div className="relative rounded-lg overflow-hidden flex justify-center mb-4">

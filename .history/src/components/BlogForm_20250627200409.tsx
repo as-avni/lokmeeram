@@ -33,7 +33,6 @@ export default function BlogForm({ mode, blogId }: { mode: "create" | "edit"; bl
   });
   const [showDialog, setShowDialog] = useState(false);
   const [dialogMessage, setDialogMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -90,23 +89,6 @@ export default function BlogForm({ mode, blogId }: { mode: "create" | "edit"; bl
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Validate required fields
-    const { title, slug, excerpt, content, date, image } = form;
-    if (!title || !slug || !excerpt || !content || !date || !image) {
-      setDialogMessage("कृपया सभी आवश्यक फ़ील्ड भरें।");
-      setShowDialog(true);
-      return;
-    }
-
-    if (mode === "edit" && !blogId) {
-      setDialogMessage("ब्लॉग अपडेट के लिए ब्लॉग आईडी आवश्यक है।");
-      setShowDialog(true);
-      return;
-    }
-
-    setIsSubmitting(true);
-
     try {
       if (mode === "create") {
         await createBlog();
@@ -117,8 +99,6 @@ export default function BlogForm({ mode, blogId }: { mode: "create" | "edit"; bl
       console.error("Blog submission failed:", error);
       setDialogMessage("ब्लॉग जोड़ने में त्रुटि हुई। कृपया पुनः प्रयास करें।");
       setShowDialog(true);
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -215,9 +195,8 @@ export default function BlogForm({ mode, blogId }: { mode: "create" | "edit"; bl
         <Button
           type="submit"
           className="mt-6 bg-orange-700 text-white px-6 py-2 rounded hover:bg-orange-800 transition"
-          disabled={isSubmitting}
         >
-          {isSubmitting ? "प्रेषण हो रहा है..." : mode === "create" ? "ब्लॉग जोड़ें" : "ब्लॉग अपडेट करें"}
+          {mode === "create" ? "ब्लॉग जोड़ें" : "ब्लॉग अपडेट करें"}
         </Button>
       </form>
 
